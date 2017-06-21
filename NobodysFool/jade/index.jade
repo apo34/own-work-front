@@ -1,0 +1,166 @@
+doctype html
+html
+  head
+    meta(charset="utf-8")
+    meta(name='viewport' content="width=device-width, initial-scale=1")
+    title Nobody's Fool
+    
+    link(rel="stylesheet" href="bootstrap/css/bootstrap.min.css")
+    link(rel="stylesheet" href="css/style.css")
+    link(rel="stylesheet" href="js/OwlCarousel2-2.2.1/dist/assets/owl.carousel.min.css")
+    link(rel="stylesheet" href="font-awesome/css/font-awesome.min.css")
+    
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous")
+    script(src="js/OwlCarousel2-2.2.1/dist/owl.carousel.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous")
+    
+    script(src="js/scripts.js")
+  body
+    .container-max
+      .row.top-menu
+        .col-md-5
+          ul.list-inline.icon-background
+            li 
+              a(href="#") Sign Up
+            li |&nbsp 
+              a(href="#") Login
+            li |&nbsp
+              a(href="#") RSS News
+            li |&nbsp
+              a(href="#") Archived News
+        .col-md-2
+
+        .col-md-5.text-right
+          span.icon-background
+            a(href="#")
+              span.fa-stack.fa-lg
+                i.fa.fa-circle.fa-stack-2x
+                i.fa.fa-linkedin.fa-stack-1x.fa-inverse
+            span.fa-stack.fa-lg
+              i.fa.fa-circle.fa-stack-2x.icon-background
+              i.fa.fa-twitter.fa-stack-1x.fa-inverse
+            span.fa-stack.fa-lg
+              i.fa.fa-circle.fa-stack-2x.icon-background
+              i.fa.fa-pinterest.fa-stack-1x.fa-inverse
+            span.fa-stack.fa-lg
+              i.fa.fa-circle.fa-stack-2x.icon-background
+              i.fa.fa-google-plus.fa-stack-1x.fa-inverse
+            span.fa-stack.fa-lg
+              i.fa.fa-circle.fa-stack-2x.icon-background
+              i.fa.fa-rss.fa-stack-1x.fa-inverse
+      .row.head-container
+        .row.my-menu
+          .col-md-12
+            ul.nav.nav-pills(role="tablist")
+              li.active(role="tab" data-toggle="pill"): a(href="#") Homepage
+              li(role="tab" data-toggle="pill"): a(href="#") Style demo
+              li(role="tab" data-toggle="pill"): a(href="#") Fullwidth
+              li(role="tab" data-toggle="pill"): a(href="#") Dropdown
+              li(role="tab" data-toggle="pill"): a(href="#") Gallery
+              li(role="tab" data-toggle="pill"): a(href="#") Portfolio
+              li(role="tab" data-toggle="pill"): a(href="#") Link text
+          hr
+
+        .row.head-class
+          .col-md-7
+            h1 NobodysFool 
+            h2: small Free website layout
+
+          .col-md-5
+            .row
+              .col-md-8
+                .input-group
+                  input.form-control.search-box(type="text" placeholder="Search our website...")
+              .col.md-4
+                .btn.btn-primary  Szukaj!
+        .row
+          hr
+        
+      .row.grey-box
+        .col-md-5.height-center
+          h1 Your title can be long and descriprive
+          p Ut et sagittis lorem, sagittis lobortis libero. Mauris consequat facilisis tellus quis mollis. Maecenas ac arcu lobortis, laoreet elit id, porta nibh. Quisque pretium elit ut dapibus gravida. Praesent dui tortor, ornare quis ligula sit amet, volutpat iaculis lorem.
+          button.btn.btn-primary(type="button") READ MORE >>
+        .col-md-7
+          p slider here
+      
+      .row.white-box
+        .col-md-6
+          img(src="http://www.fillmurray.com/g/800/800")
+        .col-md-6.media-container
+        
+          .media.my-media
+            .media-top
+              a(href="#")
+                img.media-object(src="http://www.fillmurray.com/g/80/80" alt="...")
+            .my-media-body
+              h4.media-heading Media heading
+              p Ut et sagittis lorem, sagittis lobortis libero. Mauris consequat facilisis tellus quis mollis. Maecenas ac arcu lobortis, laoreet elit id, porta nibh.
+          
+          .media.my-media
+            .media-top
+              a(href="#")
+                img.media-object(src="http://www.fillmurray.com/g/80/80" alt="...")
+            .my-media-body
+              h4.media-heading Media heading
+              p Ut et sagittis lorem, sagittis lobortis libero. Mauris consequat facilisis tellus quis mollis. Maecenas ac arcu lobortis, laoreet elit id, porta nibh.
+              
+          .media.my-media
+            .media-top
+              a(href="#")
+                img.media-object(src="http://www.fillmurray.com/g/80/80" alt="...")
+            .my-media-body
+              h4.media-heading Media heading
+              p Ut et sagittis lorem, sagittis lobortis libero. Mauris consequat facilisis tellus quis mollis. Maecenas ac arcu lobortis, laoreet elit id, porta nibh.
+              
+          .media.my-media
+            .media-top
+              a(href="#")
+                img.media-object(src="http://www.fillmurray.com/g/80/80" alt="...")
+            .my-media-body
+              h4.media-heading Media heading
+              p Ut et sagittis lorem, sagittis lobortis libero. Mauris consequat facilisis tellus quis mollis. Maecenas ac arcu lobortis, laoreet elit id, porta nibh.
+
+        .col-md-12.grey-banner
+          .col-md-8
+            h2.no-margin Lorem ipsum dolor sid amet elit !
+            p baksjflkajflkadjflkdajlkfjadlkfjdlakjfadl !
+          .col-md-4
+            button.btn.btn-primary.btn-block.btn-lg Contact us today
+            
+      footer
+        .row.footer-padding
+          .col-md-3
+            h4 About Us
+            img(src="http://www.fillmurray.com/g/215/90" alt="...")
+            p Vestibulum sit amet turpis non erat rhoncus varius ut semper metus. Sed sodales, leo eget ultricies rhoncus, dolor dolor rutrum leo, et placerat orci ante quis erat. Duis blandit, sem sed interdum elementum, ex leo sodales ipsum, vitae auctor ipsum felis a lorem. In sodales ligula vel augue pellentesque malesuada.
+          .col-md-3
+            h4 Quicklinks
+            ul
+              li Nullam euismod 
+              li felis quam 
+              li quis efficitur dui 
+              li pharetra nec
+              li Donec luctus augue 
+              li sed accumsan dolor              
+          .col-md-3
+            h4 Lastest blog posts
+            h5 Post title
+            small some stuff
+            p  Duis blandit, sem sed interdum elementum, ex leo sodales ipsum, vitae auctor ipsum felis a lorem. In sodales ligula vel augue pellentesque malesuada.
+          .col-md-3
+            h4 Contact Us
+            form
+              .form-group
+                input.form-control(type="text" placeholder="Name")
+                input.form-control(type="email" placeholder="Email")
+                input.form-control(type="text" placeholder="Subject")
+                textarea.form-control(rows="5" placeholder="Message")
+                button.btn.btn-primary Submit
+            
+        
+      .row.footer-footer
+        .col-md-6
+          p Copyrighty itp loremy sremy
+        .col-md-6
+          p templejty itp itd

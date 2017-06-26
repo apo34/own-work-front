@@ -16,9 +16,11 @@ html
     
     script(src="js/scripts.js")
   body
+    include mixins.pug
+    
     .container-max
       .row.top-menu
-        .col-md-5
+        .col-sm-12.col-md-7.visible-md.visible-lg
           ul.list-inline.icon-background
             li 
               a(href="#") Sign Up
@@ -28,28 +30,37 @@ html
               a(href="#") RSS News
             li |&nbsp
               a(href="#") Archived News
-        .col-md-2
+        .col-md-2.visible-md-block
 
-        .col-md-5.text-right
-          span.icon-background
-            a(href="#")
-              span.fa-stack.fa-lg
-                i.fa.fa-circle.fa-stack-2x
-                i.fa.fa-linkedin.fa-stack-1x.fa-inverse
+        .col-xs-10.col-md-3
+            span.icon-background
+              a#li(href="#")
+                span.fa-stack.fa-lg
+                  i.fa.fa-circle.fa-stack-2x
+                  i.fa.fa-linkedin.fa-stack-1x.fa-inverse
+              a#tw(href="#")
+                span.fa-stack.fa-lg
+                  i.fa.fa-circle.fa-stack-2x.icon-background
+                  i.fa.fa-twitter.fa-stack-1x.fa-inverse
+              a#pin(href="#")
+                span.fa-stack.fa-lg
+                  i.fa.fa-circle.fa-stack-2x.icon-background
+                  i.fa.fa-pinterest.fa-stack-1x.fa-inverse
+              a#gpl(href="#")
+                span.fa-stack.fa-lg
+                  i.fa.fa-circle.fa-stack-2x.icon-background
+                  i.fa.fa-google-plus.fa-stack-1x.fa-inverse
+              a#rss(href="#")
+                span.fa-stack.fa-lg
+                  i.fa.fa-circle.fa-stack-2x.icon-background
+                  i.fa.fa-rss.fa-stack-1x.fa-inverse
+        .col-xs-2.hidden-md.hidden-lg
+          a.pull-right(href="#")
             span.fa-stack.fa-lg
-              i.fa.fa-circle.fa-stack-2x.icon-background
-              i.fa.fa-twitter.fa-stack-1x.fa-inverse
-            span.fa-stack.fa-lg
-              i.fa.fa-circle.fa-stack-2x.icon-background
-              i.fa.fa-pinterest.fa-stack-1x.fa-inverse
-            span.fa-stack.fa-lg
-              i.fa.fa-circle.fa-stack-2x.icon-background
-              i.fa.fa-google-plus.fa-stack-1x.fa-inverse
-            span.fa-stack.fa-lg
-              i.fa.fa-circle.fa-stack-2x.icon-background
-              i.fa.fa-rss.fa-stack-1x.fa-inverse
+              i.fa.fa-circle.fa-stack-2x
+              i.fa.fa-bars.fa-stack-1x.fa-inverse
       .row.head-container
-        .row.my-menu
+        .row.my-menu.hidden-xs
           .col-md-12
             ul.nav.nav-pills(role="tablist")
               li.active(role="tab" data-toggle="pill"): a(href="#") Homepage
@@ -62,16 +73,16 @@ html
           hr
 
         .row.head-class
-          .col-md-7
+          .col-sm-7
             h1 NobodysFool 
             h2: small Free website layout
 
-          .col-md-5
+          .col-sm-5
             .row
-              .col-md-8
+              .col-xs-8
                 .input-group
                   input.form-control.search-box(type="text" placeholder="Search our website...")
-              .col.md-4
+              .col.xs-4
                 .btn.btn-primary  Szukaj!
         .row
           hr
@@ -82,59 +93,41 @@ html
           p Ut et sagittis lorem, sagittis lobortis libero. Mauris consequat facilisis tellus quis mollis. Maecenas ac arcu lobortis, laoreet elit id, porta nibh. Quisque pretium elit ut dapibus gravida. Praesent dui tortor, ornare quis ligula sit amet, volutpat iaculis lorem.
           button.btn.btn-primary(type="button") READ MORE >>
         .col-md-7
-          p slider here
+          .owl-carousel.owl-theme
+            - var n = 0
+            while n<10
+              - var h = 400+2*n
+              - var w = 600+3*n
+              .item
+                a(href="#")
+                  img(src="http://placecage.com/"+w+"/"+h)
+              -n++
+          
       
       .row.white-box
         .col-md-6
-          img(src="http://www.fillmurray.com/g/800/800")
-        .col-md-6.media-container
-        
-          .media.my-media
-            .media-top
-              a(href="#")
-                img.media-object(src="http://www.fillmurray.com/g/80/80" alt="...")
-            .my-media-body
-              h4.media-heading Media heading
-              p Ut et sagittis lorem, sagittis lobortis libero. Mauris consequat facilisis tellus quis mollis. Maecenas ac arcu lobortis, laoreet elit id, porta nibh.
+          img(src="http://www.fillmurray.com/800/800")
+        .col-md-6.media-container.text-center
           
-          .media.my-media
-            .media-top
-              a(href="#")
-                img.media-object(src="http://www.fillmurray.com/g/80/80" alt="...")
-            .my-media-body
-              h4.media-heading Media heading
-              p Ut et sagittis lorem, sagittis lobortis libero. Mauris consequat facilisis tellus quis mollis. Maecenas ac arcu lobortis, laoreet elit id, porta nibh.
-              
-          .media.my-media
-            .media-top
-              a(href="#")
-                img.media-object(src="http://www.fillmurray.com/g/80/80" alt="...")
-            .my-media-body
-              h4.media-heading Media heading
-              p Ut et sagittis lorem, sagittis lobortis libero. Mauris consequat facilisis tellus quis mollis. Maecenas ac arcu lobortis, laoreet elit id, porta nibh.
-              
-          .media.my-media
-            .media-top
-              a(href="#")
-                img.media-object(src="http://www.fillmurray.com/g/80/80" alt="...")
-            .my-media-body
-              h4.media-heading Media heading
-              p Ut et sagittis lorem, sagittis lobortis libero. Mauris consequat facilisis tellus quis mollis. Maecenas ac arcu lobortis, laoreet elit id, porta nibh.
+            +media-my-media("uno", "http://www.fillmurray.com/g/80/80", "Mixin media heading", "Ut et sagittis lorem, sagittis lobortis libero. Mauris consequat facilisis tellus quis mollis. Maecenas ac arcu lobortis, laoreet elit id, porta nibh.")
+            +media-my-media("dos", "http://www.placecage.com/80/80", "Mixin media heading", "Ut et sagittis lorem, sagittis lobortis libero. Mauris consequat facilisis tellus quis mollis. Maecenas ac arcu lobortis, laoreet elit id, porta nibh.")
+            +media-my-media("tres", "http://www.placecage.com/g/80/80", "Mixin media heading", "Ut et sagittis lorem, sagittis lobortis libero. Mauris consequat facilisis tellus quis mollis. Maecenas ac arcu lobortis, laoreet elit id, porta nibh.", "hidden-xs")
+            +media-my-media("quatro", "http://www.fillmurray.com/80/80", "Mixin media heading", "Ut et sagittis lorem, sagittis lobortis libero. Mauris consequat facilisis tellus quis mollis. Maecenas ac arcu lobortis, laoreet elit id, porta nibh.", "hidden-xs")
 
         .col-md-12.grey-banner
           .col-md-8
             h2.no-margin Lorem ipsum dolor sid amet elit !
-            p baksjflkajflkadjflkdajlkfjadlkfjdlakjfadl !
+            p Maecenas ac arcu lobortis, laoreet elit id, porta nibh. Quisque pretium elit ut dapibus gravida.
           .col-md-4
             button.btn.btn-primary.btn-block.btn-lg Contact us today
             
       footer
         .row.footer-padding
-          .col-md-3
+          .col-xs-12.col-sm-6.col-md-3
             h4 About Us
             img(src="http://www.fillmurray.com/g/215/90" alt="...")
             p Vestibulum sit amet turpis non erat rhoncus varius ut semper metus. Sed sodales, leo eget ultricies rhoncus, dolor dolor rutrum leo, et placerat orci ante quis erat. Duis blandit, sem sed interdum elementum, ex leo sodales ipsum, vitae auctor ipsum felis a lorem. In sodales ligula vel augue pellentesque malesuada.
-          .col-md-3
+          .col-xs-12.col-sm-6.col-md-3
             h4 Quicklinks
             ul
               li Nullam euismod 
@@ -142,7 +135,8 @@ html
               li quis efficitur dui 
               li pharetra nec
               li Donec luctus augue 
-              li sed accumsan dolor              
+              li sed accumsan dolor
+          .clearfix.visible-sm-block
           .col-md-3
             h4 Lastest blog posts
             h5 Post title

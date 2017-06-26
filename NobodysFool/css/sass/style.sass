@@ -8,23 +8,31 @@ img
   
 .top-menu
   padding: 10px
-  height: 60px
-  display: flex
-  align-items: center
-  box-sizing: border-box
+  min-height: 60px
   background: #2e2e2e
   color: #787878
   ul
     margin: auto
-  
+    
   a
     color: #787878
-
-  a:hover
-    color: $basic-light-blue
-  .icon-background
-    span:hover
-      color: red
+    &:hover
+      color: $basic-light-blue
+  #li
+    &:hover
+      color: #0077b5
+  #tw
+    &:hover
+      color: #1da1f2
+  #pin
+    &:hover
+      color: #bd081c
+  #gpl
+    &:hover
+      color: #dd4b39
+  #rss
+    &:hover
+      color: #f26522
 
 .container-max
   max-width: 1000px
@@ -57,15 +65,11 @@ ul.nav.nav-pills
       background-color: #eee
   
 .head-class
-  display: flex
-  align-items: center
   height: 146px
   h1, h2
     margin: 0
     
   .row
-    display: flex
-    justify-content: flex-end
     .input-group
 
 
@@ -74,7 +78,7 @@ ul.nav.nav-pills
         background: #f1f1f1
         color: #999
         border-radius: 5px
-        width: 215px
+        width: 100%
 
 hr
   border-width: 5px
@@ -83,7 +87,7 @@ hr
   
 .grey-box
   background-color: #f1f1f1
-  height: 465px
+  min-height: 465px
   padding: 10px 20px
   box-sizing: border-box
   
@@ -102,36 +106,30 @@ hr
   background: #ffffff
   padding: 40px 20px
   box-sizing: border-box
-
-.media.my-media
-  height: 228px
-  width: 225px
-  display: flex
-  flex-direction: column
-  justify-content: flex-start
-  align-items: center
-  margin: 0
-  padding: 0 5px
-  box-sizing: border-box
-    
   
-.my-media-body
-  text-align: center
-  margin-top: 10px
+  img
+    padding-bottom: 20px
   
 .media-container
-  display: flex
-  flex-wrap: wrap
+  .media.my-media
+    min-height: 228px
+    max-width: 45%
+    margin: 0
+    padding: 0 5px
+    box-sizing: border-box
+    display: inline-block
+    
+    .my-media-body
+      
+      margin: 10px 0
   
 .grey-banner
   margin-top: 40px
-  height: 120px
+  min-height: 120px
   background: #e0e0e0
   box-sizing: border-box
   border-left: 10px solid #0099ff
   padding: 30px
-  display: flex
-  align-items: stretch 
   .btn-block
     height: 100%
   

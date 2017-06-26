@@ -1,0 +1,8 @@
+mixin media-my-media(id, img, heading, text, addClass)
+  .media.my-media(class= addClass)
+    .media-top(id=id)
+      a(href="#")
+        img.center-block.media-object(src=img alt="...")
+    .my-media-body
+      h4.media-heading= heading
+      p= text

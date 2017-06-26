@@ -293,9 +293,11 @@ footer {
   background-image: url("../img/225H.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center; }
+  background-position: bottom center; }
   footer .lockup {
-    padding: 50px 30px; }
+    padding: 50px 30px;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 10px; }
     footer .lockup .logo {
       display: inline-block;
       height: 50px;
@@ -318,7 +320,7 @@ footer {
           footer .lockup .content-wrap nav ul li {
             color: rgba(0, 0, 0, 0.7);
             display: inline-block;
-            margin: 0 10px;
+            margin: 0 15px;
             font-weight: 700;
             font-size: 14px;
             text-transform: uppercase; }
@@ -326,3 +328,8 @@ footer {
               color: rgba(0, 0, 0, 0.7); }
               footer .lockup .content-wrap nav ul li a:hover {
                 color: black; }
+      footer .lockup .content-wrap .copyright {
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 14px;
+        color: rgba(0, 0, 0, 0.7); }

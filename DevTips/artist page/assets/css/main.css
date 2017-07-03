@@ -230,6 +230,11 @@ img::-moz-selection {
 body {
   -webkit-tap-highlight-color: #FFF498; }
 
+h3 {
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
 header {
   height: 450px;
   background-image: url("../img/225H.jpg");
@@ -283,7 +288,7 @@ header {
       border: 10px solid white; }
   header .kicker {
     text-align: center;
-      text-align-font-weight: 700;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.1em;
     color: white;
@@ -333,3 +338,39 @@ footer {
         text-transform: uppercase;
         font-size: 14px;
         color: rgba(0, 0, 0, 0.7); }
+
+h3 {
+  color: #e1c184;
+  text-align: center; }
+
+.face-lockup {
+  max-width: 780px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .face-lockup .face-image {
+    height: 200px;
+    width: 200px;
+    background: url(http://www.placecage.com/200/200);
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%; }
+  .face-lockup .icon-pencil {
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    background-image: url("../img/icons/pencil.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+    fill: pink; }

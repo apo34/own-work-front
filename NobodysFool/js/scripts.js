@@ -17,5 +17,5 @@ $(document).ready(function () {
     dots: false
 
   })
-  console.log($('.owl-carousel'))
+  //console.log($('.owl-carousel'))
 });
